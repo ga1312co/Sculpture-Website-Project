@@ -1,0 +1,85 @@
+.image-container {
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 203.5px;
+}
+
+.image-container img {
+    position: absolute;
+    width: 1000px; /* Fixed width as per your requirement */
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto; /* Maintains the aspect ratio */
+    display: block;
+    margin: 0 auto;
+}
+
+.image-container h1 {
+    position: absolute;
+    left: 50%; /* Center the title */
+    top: 30%; /* Position in the middle of the image */
+    transform: translate(-50%, -50%);
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    color: rgb(254, 206, 117);
+    text-shadow: 4px 8px 4px rgba(50, 36, 3, 0.5);
+}
+
+.navbar ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    background-color: rgb(rgb(198, 218, 215));
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(50, 36, 3);
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0px;
+    border-radius: 0px;
+    background-color: rgb(254, 206, 117);
+}
+
+.navbar a:hover {
+    background-color: rgb(50, 36, 3);
+    color: rgb(254, 206, 117);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    padding: 0px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.content h1 {
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    color: rgb(50, 36, 3);
+    text-shadow: 4px 8px 4px rgba(254, 206, 117, 0.5);
+    text-align: center;
+
+}
+
+.content p {
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: rgb(50, 36, 3);
+    text-align: center;
+
+}
+
+@media (max-width: 800px) {
+    .content {
+        width: 100%; /* Makes the width responsive below 800px */
+        padding: 0px; /* Adds some padding so text doesn't touch the edges */
+    }
+}
