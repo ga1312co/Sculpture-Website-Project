@@ -26,12 +26,22 @@
     text-shadow: 4px 8px 4px rgba(50, 36, 3, 0.5);
 }
 
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(254, 206, 117);
+    width: 1000px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 0px;
+
+}
+
 .navbar ul {
     position: relative;
     display: flex;
     justify-content: center;
     list-style-type: none;
-    background-color: rgb(rgb(198, 218, 215));
 }
 
 .navbar a {
@@ -52,12 +62,14 @@
 
 .content {
     display: flex;
-    justify-content: center;
-    align-items:center;
-    flex-direction: column;
+    justify-content:space-between;
+ 
     padding: 0px;
     width: 800px;
     margin: 0 auto;
+}
+.content-text, .content-image {
+    flex: 1;
 }
 
 .content h1 {
@@ -70,16 +82,22 @@
 }
 
 .content p {
-    font-family: 'Arial Narrow Bold', sans-serif;
-    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
     color: rgb(50, 36, 3);
     text-align: center;
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .content {
-        width: 100%; /* Makes the width responsive below 800px */
+        width: 100%; /* Makes the width responsive below 1000px */
         padding: 0px; /* Adds some padding so text doesn't touch the edges */
+    }
+    .navbar {
+        width: 100%; /* Makes the width responsive below 1000px */
+    }
+    .navbar ul {
+        justify-content: space-around; /* Aligns the menu items evenly */
     }
 }
