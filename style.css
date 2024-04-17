@@ -34,7 +34,6 @@
     height: 50px;
     margin: 0 auto;
     padding: 0px;
-
 }
 
 .navbar ul {
@@ -60,10 +59,25 @@
     color: rgb(254, 206, 117);
 }
 
+.index {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.index img {
+    width: 1000px;
+    height: auto;
+}
+
 .content {
     display: flex;
-    width: 800px;
+    justify-content: center;
+    width: 1000px;
     margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .content p {
@@ -71,22 +85,14 @@
     font-size: 15px;
     color: rgb(50, 36, 3);
     text-align: center;
-
+    width: 400px;
 }
 
-@media (max-width: 1000px) {
-    .content {
-        width: 100%; /* Makes the width responsive below 1000px */
-        padding: 0px; /* Adds some padding so text doesn't touch the edges */
-    }
-    .navbar {
-        width: 100%; /* Makes the width responsive below 1000px */
-    }
-    .navbar ul {
-        justify-content: space-around; /* Aligns the menu items evenly */
-    }
+.content img {
+    width: 400px;
+    height: auto;
+    margin: 1rem;
 }
-
 button {
     margin: 1rem;
 }
@@ -127,4 +133,17 @@ button {
 
 .btn.browse-button {
     z-index: 1;
+}
+
+@media (max-width: 1000px) {
+    .content {
+        width: 100%; /* Makes the width responsive below 1000px */
+        padding: 0px; /* Adds some padding so text doesn't touch the edges */
+    }
+    .navbar {
+        width: 100%; /* Makes the width responsive below 1000px */
+    }
+    .navbar ul {
+        justify-content: space-around; /* Aligns the menu items evenly */
+    }
 }
