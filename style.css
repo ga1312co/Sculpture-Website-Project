@@ -177,3 +177,69 @@ button {
         justify-content: space-around; /* Aligns the menu items evenly */
     }
 }
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    gap: 20px; 
+    margin: auto; 
+    padding: 30px;
+    font-family: Lora, serif;
+}
+
+
+.product-card {
+    background-color: #fff;
+    width: 200px;
+    padding: 30px;
+    margin: 20px;
+    text-align: center; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-10px); 
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    border-radius: 5px;
+}
+
+.product-card img {
+    width: 100%; 
+    height: 220px;
+    object-fit: cover; 
+}
+
+.product-card h3 {
+    margin: 10px 0 5px;
+    font-weight: 900; 
+}
+
+.product-card h4 {
+    margin: 5px 0 10px;
+    font-weight: 400; 
+    color: #777777;
+}
+
+.product-card p {
+    color: #424242;
+    font-weight: 100;
+}
+
+.email-button {
+    display: inline-block;
+    background-color: #f8f9fa;
+    color: #333333;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.email-button:hover {
+    background-color: #eae5e2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
