@@ -194,8 +194,8 @@ button {
 .product-card {
     background-color: #fff;
     width: 200px;
-    padding: 20px;
-    margin: 30px;
+    padding: 30px;
+    margin: 20px;
     text-align: center; 
     transition: transform 0.3s ease-in-out;
 }
@@ -235,7 +235,7 @@ button {
     color: #333333;
     padding: 10px 20px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .email-button:hover {
