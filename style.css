@@ -1,3 +1,9 @@
+.html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 .image-container {
     position: relative;
     align-items: center;
@@ -238,8 +244,15 @@ button {
     }
     .navbar {
         width: 100%; /* Makes the width responsive below 1000px */
+
     }
     .navbar ul {
         justify-content: space-around; /* Aligns the menu items evenly */
+    }
+    .image-container img {
+        /* Adjust the width of the image for smaller screens, it should crop from the right side of the image */
+    }
+    .index img {
+        width: 100%; /* Makes the width responsive below 1000px */
     }
 }
