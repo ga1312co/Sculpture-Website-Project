@@ -165,19 +165,6 @@ button {
     z-index: 1;
 }
 
-@media (max-width: 1000px) {
-    .content {
-        width: 100%; /* Makes the width responsive below 1000px */
-        padding: 0px; /* Adds some padding so text doesn't touch the edges */
-    }
-    .navbar {
-        width: 100%; /* Makes the width responsive below 1000px */
-    }
-    .navbar ul {
-        justify-content: space-around; /* Aligns the menu items evenly */
-    }
-}
-
 .product-grid {
     display: flex;
     flex-wrap: wrap;
@@ -242,4 +229,17 @@ button {
     background-color: #eae5e2;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+@media (max-width: 1000px) {
+    .content {
+        width: 100%; /* Makes the width responsive below 1000px */
+        padding: 0px; /* Adds some padding so text doesn't touch the edges */
+    }
+    .navbar {
+        width: 100%; /* Makes the width responsive below 1000px */
+    }
+    .navbar ul {
+        justify-content: space-around; /* Aligns the menu items evenly */
+    }
 }
