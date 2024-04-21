@@ -5,21 +5,22 @@
 }
 
 .image-container {
+
     position: relative;
-    align-items: center;
-    width: 100%;
-    height: 203.5px;
+    width: 100%; /* Full width of the viewport */
+    height: 203.5px; /* Fixed heoight */
+    overflow: hidden; /* Hides any part of the content that overflows the container's box */
 }
 
 .image-container img {
     position: absolute;
-    width: 1000px; /* Fixed width as per your requirement */
-    left: 50%;
-    transform: translateX(-50%);
+    width: 1000px; /* Fixed width */
+    left: 50%; /* This positions the center of the image at the middle of the container */
+    transform: translateX(-50%); /* This shifts the image back by half its width, effectively centering it */
     height: auto; /* Maintains the aspect ratio */
     display: block;
-    margin: 0 auto;
 }
+
 
 .image-container h1 {
     position: absolute;
@@ -43,21 +44,26 @@
 }
 
 .navbar ul {
-    position: relative;
     display: flex;
     justify-content: center;
     list-style-type: none;
+    width: 100%; /* Takes full width of the navbar */
+    margin: 0;
+    padding: 0;
+    align-items: center; /* Ensures list items stretch to fill the navbar vertically */
 }
 
 .navbar a {
+    display: flex;
+    justify-content: center; /* Centers text horizontally */
     text-decoration: none;
     color: rgb(50, 36, 3);
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
-    padding: 10px;
-    margin: 0px;
-    border-radius: 0px;
-    background-color: rgb(254, 206, 117);
+    flex-grow: 1; /* Ensures it takes up any available space */
+    padding: 15px 10px; /* Adjust padding as needed */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+    height: 100%; /* Makes sure the anchor tag covers the full height of the navbar */
 }
 
 .navbar a:hover {
@@ -246,11 +252,10 @@ button {
         width: 100%; /* Makes the width responsive below 1000px */
 
     }
-    .navbar ul {
-        justify-content: space-around; /* Aligns the menu items evenly */
-    }
+
     .image-container img {
-        /* Adjust the width of the image for smaller screens, it should crop from the right side of the image */
+        left: 0; /* Aligns the image to the left edge of the container */
+        transform: translateX(0%); /* No shift is needed because the image should fill or fit within the container */
     }
     .index img {
         width: 100%; /* Makes the width responsive below 1000px */
