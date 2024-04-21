@@ -61,8 +61,8 @@
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
     flex-grow: 1; /* Ensures it takes up any available space */
-    padding: 15px 10px; /* Adjust padding as needed */
-    transition: background-color 0.3s; /* Smooth transition for background color */
+    padding: 13.5px 10px; /* Adjust padding as needed */
+    transition: background-color 0.5s; /* Smooth transition for background color */
     height: 100%; /* Makes sure the anchor tag covers the full height of the navbar */
 }
 
