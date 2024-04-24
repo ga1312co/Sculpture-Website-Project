@@ -4,6 +4,11 @@
     width: 100%;
 }
 
+
+body, h1, h2, h3, p {
+    font-family: 'EB Garamond', serif;
+}
+
 .image-container {
 
     position: relative;
@@ -191,7 +196,7 @@ button {
 
 
 .product-card {
-    background-color: #fff;
+    background-color: rgb(254, 206, 117);
     width: 200px;
     padding: 30px;
     margin: 20px;
