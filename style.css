@@ -197,6 +197,7 @@ button {
 
 .product-card {
     background-color: rgb(254, 206, 117);
+    border-radius: 5px;
     width: 200px;
     padding: 30px;
     margin: 20px;
